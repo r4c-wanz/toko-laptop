@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop si unyil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+  <!-- Pembuka Header -->
+  <header class="py-5 absolute left-0 top-0 w-full z-[999]">
+    <div class="container">
+      <div class="flex justify-between">
+        <h1 class="text-4xl">UNYIL</h1>
+        <div>
+          <div class="flex gap-10">
+            <ul id="navigation" class="gap-10 hidden flex lg:flex">
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li>SHOP</li>
+              <li>BLOG</li>
+            </ul>
+            <button id="hamburger" class="inline lg:hidden">
+              <span class="hamburger-line origin-top-left"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Penutup Header -->
+
+  <!-- Pembuka Hero Section -->
+  <div class="flex flex-col lg:flex-row overflow-hidden">
+    <div class="lg:w-[60%] w-full lg:py-28 py-20 relative">
+      <div class="container flex justify-center">
+        <div>
+          <h1 id="nama-laptop" class="lg:text-5xl text-2xl mb-7 transition">Unyil 15 - A11S</h1>
+          <p id="deskripsi-laptop" class="max-w-lg text-slate-500 transition">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium corporis sequi aut. Ducimus laudantium molestiae voluptate blanditiis, nostrum quaerat.</p>
+          <h2 id="harga-laptop" class="my-7 font-semibold text-xl transition">Rp. 16.502.850</h2>
+          <button class="btn-gray">Add to Cart</button>
+          <div class="absolute left-24 bottom-4 flex gap-2">
+            <button class="btn-circle" id="previousButton"><i class="fa-solid fa-chevron-left"></i></button>
+            <div>
+              <span class="text-3xl font-bold text-slate-600" id="nomor-laptop">03</span>
+              <span class="text-slate-400"> / </span>
+              <span class="text-slate-400" id="maksimal-laptop">08</span>
+            </div>
+            <button class="btn-circle" id="nextButton"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-[40%] w-full lg:py-28 py-8 bg-bimut -order-1 lg:order-2">
+      <img id="gambar-laptop" src="images/laptop-1.png" alt="Laptop" class="lg:h-[425px] h-[212px] mx-auto relative lg:-left-40 lg:bottom-0 -bottom-20 transition duration-500">
+    </div>
+  </div>
+  <!-- Penutup Hero Section -->
+  <script src="script.js"></script>
+</body>
+</html>
